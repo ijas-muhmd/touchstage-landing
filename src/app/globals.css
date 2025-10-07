@@ -12,15 +12,177 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+/* Sierra specific colors */
+.text-green-500 {
+  color: #10b981;
+}
+
+.bg-green-500 {
+  background-color: #10b981;
+}
+
+.hover\:bg-green-400:hover {
+  background-color: #34d399;
+}
+
+.hover\:text-green-500:hover {
+  color: #10b981;
+}
+
+.focus\:bg-green-800:focus {
+  background-color: #065f46;
+}
+
+.active\:bg-green-600:active {
+  background-color: #059669;
+}
+
+/* Sierra typography */
+.font-headline-xl {
+  font-size: 3.5rem;
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.font-body-m {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.font-body-l {
+  font-size: 1.125rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.font-headline-s {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.font-headline-l {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.text-gray-350 {
+  color: #9ca3af;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+@media (min-width: 768px) {
+  .font-headline-xl {
+    font-size: 4rem;
+  }
+  .font-headline-l {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .font-headline-xl {
+    font-size: 4.5rem;
+  }
+  .font-headline-l {
+    font-size: 3.5rem;
+  }
+}
+
+/* Sierra customer logos grayscale effect */
+.filter-uniform-30 {
+  filter: grayscale(100%) brightness(0.7);
+}
+
+.group-hover\/container\:filter-none:hover {
+  filter: none;
+}
+
+.group-focus-visible\/container\:filter-none:focus-visible {
+  filter: none;
+}
+
+.group-active\/container\:filter-none:active {
+  filter: none;
+}
+
+/* Alternative grayscale classes for better browser support */
+.grayscale {
+  filter: grayscale(100%);
+}
+
+.hover\:grayscale-0:hover {
+  filter: grayscale(0%);
+}
+
+/* WeightWatchers Testimonial Card specific styles */
+.rounded-4xl {
+  border-radius: 2rem;
+}
+
+.filter-black {
+  filter: brightness(0) saturate(100%);
+}
+
+.font-label-m {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+.text-gray-350 {
+  color: #888888;
+}
+
+.bg-green-350 {
+  background-color: #059669;
+}
+
+/* Sierra Speaks Section - Audio Waveform Animation */
+@keyframes waveform {
+  0%, 100% {
+    transform: scaleY(0.3);
+    opacity: 0.7;
+  }
+  50% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+/* Make AI Section - Fade In Animation */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.5s ease-out;
 }
