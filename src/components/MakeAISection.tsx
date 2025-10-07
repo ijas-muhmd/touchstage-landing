@@ -162,7 +162,7 @@ export default function MakeAISection() {
             </h2>
             <div className="col-span-12 row-start-2 xl:col-span-8">
               <p className="font-body-s whitespace-pre-wrap text-gray-400 md:max-w-xl">
-                Sierra's platform enables your company to build an AI agent that is personalized to your business and customers.
+                Sierra&apos;s platform enables your company to build an AI agent that is personalized to your business and customers.
               </p>
             </div>
             <div className="col-span-12 row-start-3 flex min-w-[170px] pt-2 xl:col-span-3 xl:col-start-10 xl:row-start-1 xl:items-end xl:justify-end xl:place-self-end">

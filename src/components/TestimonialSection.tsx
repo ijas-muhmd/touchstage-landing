@@ -19,7 +19,7 @@ export default function TestimonialSection() {
                 src="https://sierra.ai/-/cdn/image?src=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fca4jck6w%2Fproduction%2Fd3f63ac832769f3a6a7b8bb9261e0c5c4d3833cd-146x40.svg%3Fauto%3Dformat&width=3840&quality=90"
               />
               <blockquote className="relative max-w-prose grow pr-4 font-body-m xl:font-headline-s text-gray-700">
-                "I knew the AI agent would answer questions quickly, but I didn't expect the responses to be so genuine and empathetic."
+                &ldquo;I knew the AI agent would answer questions quickly, but I didn&apos;t expect the responses to be so genuine and empathetic.&rdquo;
               </blockquote>
               <div className="flex justify-between gap-4">
                 <div className="flex items-center gap-3 md:gap-4">

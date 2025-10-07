@@ -1,7 +1,23 @@
 'use client';
 
+interface Metric {
+  label: string;
+  value: string;
+  hasIcon?: boolean;
+}
+
+interface Customer {
+  id: string;
+  name: string;
+  logo: string;
+  image: string;
+  metrics: Metric[];
+  description: string;
+  href: string;
+}
+
 export default function CustomerResultsSection() {
-  const customers = [
+  const customers: Customer[] = [
     {
       id: 'sonos',
       name: 'Sonos',

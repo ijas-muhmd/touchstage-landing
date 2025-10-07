@@ -171,7 +171,7 @@ export default function SafeAndSecureSection() {
             </h2>
             <div className="col-span-12 row-start-2 xl:col-span-8">
               <p className="font-body-s whitespace-pre-wrap text-gray-100 md:max-w-xl">
-                Sierra is designed with the highest commitment to trust, security, and compliance. Your AI agent won't pretend to be something it's not, and it will be honest about its limitations.
+                Sierra is designed with the highest commitment to trust, security, and compliance. Your AI agent won&apos;t pretend to be something it&apos;s not, and it will be honest about its limitations.
               </p>
             </div>
           </div>

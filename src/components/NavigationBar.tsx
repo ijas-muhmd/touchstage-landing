@@ -1,12 +1,14 @@
 'use client';
 
+import Link from 'next/link';
+
 export default function NavigationBar() {
   return (
     <nav className="bg-white py-3 xl:py-6 sticky top-0 z-50">
       <div className="mx-auto max-w-[1160px] px-4 md:px-6 flex w-full items-center justify-between md:h-11">
         <div className="relative flex w-full items-center justify-between gap-16 xl:justify-normal">
           {/* Sierra Logo */}
-          <a 
+          <Link 
             href="/" 
             className="focus:outline-none focus:text-green-500 transition-colors text-green-500"
             aria-label="Homepage"
@@ -24,7 +26,7 @@ export default function NavigationBar() {
               <path d="M466.17 110.61L457.89 97.8396C466.7 95.4196 472.64 87.8696 472.64 78.6396C472.64 67.2796 463.5 58.8496 451.07 58.8496H418.94L418.84 59.6696C422.33 61.5096 423.63 63.7596 423.63 68.7396V115.56C423.63 120.54 422.33 122.79 418.84 124.63L418.94 125.45H438.83L438.93 124.63C435.63 122.79 434.33 120.54 434.33 115.56V98.7796H446.07L459.61 119.68C461.73 122.95 466.58 128.52 478.45 125.46L478.55 124.64C474.36 121.88 471.78 119.27 466.17 110.62V110.61ZM450.53 89.4196H434.32V68.1396H450.53C456.84 68.1396 461.6 72.7696 461.6 78.7296C461.6 84.6896 456.84 89.4196 450.53 89.4196Z" fill="currentColor"></path>
               <path d="M396.199 110.61L387.919 97.8396C396.729 95.4196 402.669 87.8696 402.669 78.6396C402.669 67.2796 393.529 58.8496 381.099 58.8496H348.969L348.869 59.6696C352.359 61.5096 353.659 63.7596 353.659 68.7396V115.56C353.659 120.54 352.359 122.79 348.869 124.63L348.969 125.45H368.859L368.959 124.63C365.659 122.79 364.359 120.54 364.359 115.56V98.7796H376.099L389.639 119.68C394.969 127.91 406.069 126.64 410.189 125.46L410.289 124.63C403.759 121.52 400.169 116.74 396.199 110.61ZM380.559 89.4196H364.349V68.1396H380.559C386.869 68.1396 391.629 72.7696 391.629 78.7296C391.629 84.6896 386.869 89.4196 380.559 89.4196Z" fill="currentColor"></path>
             </svg>
-          </a>
+          </Link>
 
           {/* Desktop Navigation Menu */}
           <ul className="hidden flex-col items-center xl:flex xl:flex-row">
@@ -97,7 +99,7 @@ export default function NavigationBar() {
 
           {/* Mobile Menu Button (hidden on desktop) */}
           <div className="absolute left-0 z-40 flex w-full items-center justify-between xl:hidden">
-            <a 
+            <Link 
               aria-label="Homepage" 
               className="block focus:text-green-500 outline-hidden transition-colors text-green-500"
               href="/"
@@ -115,7 +117,7 @@ export default function NavigationBar() {
                 <path d="M466.17 110.61L457.89 97.8396C466.7 95.4196 472.64 87.8696 472.64 78.6396C472.64 67.2796 463.5 58.8496 451.07 58.8496H418.94L418.84 59.6696C422.33 61.5096 423.63 63.7596 423.63 68.7396V115.56C423.63 120.54 422.33 122.79 418.84 124.63L418.94 125.45H438.83L438.93 124.63C435.63 122.79 434.33 120.54 434.33 115.56V98.7796H446.07L459.61 119.68C461.73 122.95 466.58 128.52 478.45 125.46L478.55 124.64C474.36 121.88 471.78 119.27 466.17 110.62V110.61ZM450.53 89.4196H434.32V68.1396H450.53C456.84 68.1396 461.6 72.7696 461.6 78.7296C461.6 84.6896 456.84 89.4196 450.53 89.4196Z" fill="currentColor"></path>
                 <path d="M396.199 110.61L387.919 97.8396C396.729 95.4196 402.669 87.8696 402.669 78.6396C402.669 67.2796 393.529 58.8496 381.099 58.8496H348.969L348.869 59.6696C352.359 61.5096 353.659 63.7596 353.659 68.7396V115.56C353.659 120.54 352.359 122.79 348.869 124.63L348.969 125.45H368.859L368.959 124.63C365.659 122.79 364.359 120.54 364.359 115.56V98.7796H376.099L389.639 119.68C394.969 127.91 406.069 126.64 410.189 125.46L410.289 124.63C403.759 121.52 400.169 116.74 396.199 110.61ZM380.559 89.4196H364.349V68.1396H380.559C386.869 68.1396 391.629 72.7696 391.629 78.7296C391.629 84.6896 386.869 89.4196 380.559 89.4196Z" fill="currentColor"></path>
               </svg>
-            </a>
+            </Link>
             <div className="z-30 flex items-center gap-2">
               <a 
                 className="inline-flex cursor-pointer items-center justify-between rounded-full outline-hidden transition-all duration-150 bg-green-500 text-white hover:bg-green-400 focus-visible:bg-green-400 active:bg-green-600 gap-1 py-2 px-4"
